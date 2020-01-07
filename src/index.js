@@ -1,5 +1,5 @@
-// content of index.js
 const express = require('express');
+const _ = require('underscore');
 const app = new express();
 let users = [];
 
