@@ -1,5 +1,5 @@
+// content of index.js
 const express = require('express');
-const _ = require('underscore');
 const app = new express();
 let users = [];
 
@@ -21,6 +21,8 @@ app.post('/user', (req, res) => {
   users.push({id:0})
   res.json(users);
 });
+
+
 
 app.listen(3000,()=> {
   console.log('Listen on port 3000');
